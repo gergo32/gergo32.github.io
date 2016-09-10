@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lotto</title>
+<style>
+*{
+	-webkit-user-select: none;
+	font-family:sans-serif;
+}
+
+h1,h2,h3,div{
+	cursor:default;
+	color:white;
+}
+
+body{
+background-color:darkblue;
+}
+
+h1{
+	text-align:center;
+	font-size:5em;
+	padding:0;
+	margin:2%;
+}
+
+h2{
+	font-size:2em;
+}
+
+h3{
+	padding:0;
+	margin:0;
+	font-size:1.5em;
+}
+
+#lottobox{
+	margin-left:5%;
+	width:70%;
+	float:left;
+}
+
+#lottobox button{
+	display:block;
+	margin:0;
+	width:60px;
+	height:60px;
+	text-align:center;
+	padding:0;
+	-webkit-user-select: none;
+	float:left;
+	cursor:pointer;
+}
+
+#lottobox button:disabled{
+}
+
+#form{
+	margin-top:15px;
+	margin-bottom:30px;
+	font-weight:bold;
+}
+
+.button{
+	height:50px;
+	width:200px;
+	margin:2px;
+}
+
+option,select{
+	font-weight:bold;
+	font-size:1em;
+}
+
+#nums{
+	height:40px;
+	font-size:30px;
+}
+
+#demo{
+	text-align:center;
+	margin:30px;
+	font-size:35px;
+}
+</style>
+</head>
+<body>
+<h1>Lotto</h1>
+
+<div id="lottobox">
+<button value="1" class="lottobutton"  onclick="hello(this)">1</button>
+<button value="2" class="lottobutton"  onclick="hello(this)">2</button>
+<button value="3" class="lottobutton"  onclick="hello(this)">3</button>
+<button value="4" class="lottobutton"  onclick="hello(this)">4</button>
+<button value="5" class="lottobutton"  onclick="hello(this)">5</button>
+<button value="6" class="lottobutton"  onclick="hello(this)">6</button>
+<button value="7" class="lottobutton"  onclick="hello(this)">7</button>
+<button value="8" class="lottobutton"  onclick="hello(this)">8</button>
+<button value="9" class="lottobutton"  onclick="hello(this)">9</button>
+<button value="10"class="lottobutton"  onclick="hello(this)">10</button>
+<button value="11"class="lottobutton"  onclick="hello(this)">11</button>
+<button value="12"class="lottobutton"  onclick="hello(this)">12</button>
+<button value="13"class="lottobutton"  onclick="hello(this)">13</button>
+<button value="14"class="lottobutton"  onclick="hello(this)">14</button>
+<button value="15"class="lottobutton"  onclick="hello(this)">15</button>
+<button value="16"class="lottobutton"  onclick="hello(this)">16</button>
+<button value="17"class="lottobutton"  onclick="hello(this)">17</button>
+<button value="18"class="lottobutton"  onclick="hello(this)">18</button>
+<button value="19"class="lottobutton"  onclick="hello(this)">19</button>
+<button value="20"class="lottobutton"  onclick="hello(this)">20</button>
+<button value="21"class="lottobutton"  onclick="hello(this)">21</button>
+<button value="22"class="lottobutton"  onclick="hello(this)">22</button>
+<button value="23"class="lottobutton"  onclick="hello(this)">23</button>
+<button value="24"class="lottobutton"  onclick="hello(this)">24</button>
+<button value="25"class="lottobutton"  onclick="hello(this)">25</button>
+<button value="26"class="lottobutton"  onclick="hello(this)">26</button>
+<button value="27"class="lottobutton"  onclick="hello(this)">27</button>
+<button value="28"class="lottobutton"  onclick="hello(this)">28</button>
+<button value="29"class="lottobutton"  onclick="hello(this)">29</button>
+<button value="30"class="lottobutton"  onclick="hello(this)">30</button>
+<button value="31"class="lottobutton"  onclick="hello(this)">31</button>
+<button value="32"class="lottobutton"  onclick="hello(this)">32</button>
+<button value="33"class="lottobutton"  onclick="hello(this)">33</button>
+<button value="34"class="lottobutton"  onclick="hello(this)">34</button>
+<button value="35"class="lottobutton"  onclick="hello(this)">35</button>
+<button value="36"class="lottobutton"  onclick="hello(this)">36</button>
+<button value="37"class="lottobutton"  onclick="hello(this)">37</button>
+<button value="38"class="lottobutton"  onclick="hello(this)">38</button>
+<button value="39"class="lottobutton"  onclick="hello(this)">39</button>
+<button value="40"class="lottobutton"  onclick="hello(this)">40</button>
+<button value="41"class="lottobutton"  onclick="hello(this)">41</button>
+<button value="42"class="lottobutton"  onclick="hello(this)">42</button>
+<button value="43"class="lottobutton"  onclick="hello(this)">43</button>
+<button value="44"class="lottobutton"  onclick="hello(this)">44</button>
+<button value="45"class="lottobutton"  onclick="hello(this)">45</button>
+<button value="46"class="lottobutton"  onclick="hello(this)">46</button>
+<button value="47"class="lottobutton"  onclick="hello(this)">47</button>
+<button value="48"class="lottobutton"  onclick="hello(this)">48</button>
+<button value="49"class="lottobutton"  onclick="hello(this)">49</button>
+<button value="50"class="lottobutton"  onclick="hello(this)">50</button>
+<button value="51"class="lottobutton"  onclick="hello(this)">51</button>
+<button value="52"class="lottobutton"  onclick="hello(this)">52</button>
+<button value="53"class="lottobutton"  onclick="hello(this)">53</button>
+<button value="54"class="lottobutton"  onclick="hello(this)">54</button>
+<button value="55"class="lottobutton"  onclick="hello(this)">55</button>
+<button value="56"class="lottobutton"  onclick="hello(this)">56</button>
+<button value="57"class="lottobutton"  onclick="hello(this)">57</button>
+<button value="58"class="lottobutton"  onclick="hello(this)">58</button>
+<button value="59"class="lottobutton"  onclick="hello(this)">59</button>
+<button value="60"class="lottobutton"  onclick="hello(this)">60</button>
+<button value="61"class="lottobutton"  onclick="hello(this)">61</button>
+<button value="62"class="lottobutton"  onclick="hello(this)">62</button>
+<button value="63"class="lottobutton"  onclick="hello(this)">63</button>
+<button value="64"class="lottobutton"  onclick="hello(this)">64</button>
+<button value="65"class="lottobutton"  onclick="hello(this)">65</button>
+<button value="66"class="lottobutton"  onclick="hello(this)">66</button>
+<button value="67"class="lottobutton"  onclick="hello(this)">67</button>
+<button value="68"class="lottobutton"  onclick="hello(this)">68</button>
+<button value="69"class="lottobutton"  onclick="hello(this)">69</button>
+<button value="70"class="lottobutton"  onclick="hello(this)">70</button>
+<button value="71"class="lottobutton"  onclick="hello(this)">71</button>
+<button value="72"class="lottobutton"  onclick="hello(this)">72</button>
+<button value="73"class="lottobutton"  onclick="hello(this)">73</button>
+<button value="74"class="lottobutton"  onclick="hello(this)">74</button>
+<button value="75"class="lottobutton"  onclick="hello(this)">75</button>
+<button value="76"class="lottobutton"  onclick="hello(this)">76</button>
+<button value="77"class="lottobutton"  onclick="hello(this)">77</button>
+<button value="78"class="lottobutton"  onclick="hello(this)">78</button>
+<button value="79"class="lottobutton"  onclick="hello(this)">79</button>
+<button value="80"class="lottobutton"  onclick="hello(this)">80</button>
+<button value="81"class="lottobutton"  onclick="hello(this)">81</button>
+<button value="82"class="lottobutton"  onclick="hello(this)">82</button>
+<button value="83"class="lottobutton"  onclick="hello(this)">83</button>
+<button value="84"class="lottobutton"  onclick="hello(this)">84</button>
+<button value="85"class="lottobutton"  onclick="hello(this)">85</button>
+<button value="86"class="lottobutton"  onclick="hello(this)">86</button>
+<button value="87"class="lottobutton"  onclick="hello(this)">87</button>
+<button value="88"class="lottobutton"  onclick="hello(this)">88</button>
+<button value="89"class="lottobutton"  onclick="hello(this)">89</button>
+<button value="90"class="lottobutton"  onclick="hello(this)">90</button>
+</div>
+
+<h2>Ur numbars:</h2>
+<div id="nums"></div>
+
+<form id="form">
+  <h3>How many times?:</h3><br>
+  <select class="button" name="pullcount">
+  <option value="15">a cuople months</option>
+  <option value="50">4 a year</option>
+  <option value="500">decade</option>
+  <option value="4000">lifetime</option>
+  </select>
+  </form>
+  <input id="xb" class="button" type="button" value="nyomjad" onclick="xxx()" disabled>
+
+<input class="button" type="button" value="try new numbers" onclick="location.reload()">
+<h3 id="demo"></h3>
+
+<script>
+var arr = [];
+x=0;
+
+function hello(button){
+arr.push(button.value);
+button.disabled = true;
+x+=1;
+document.getElementById("nums").innerHTML=(arr)
+if(x>=5){
+	document.getElementById("xb").disabled = false;
+var buttons = document.getElementsByClassName("lottobutton");
+for (var i = 0; i < buttons.length; i++) {
+        buttons[i].disabled = true;
+}
+}
+return arr
+}
+
+function xxx(){
+var pullcount = parseInt( document.getElementsByName("pullcount")[0].value);
+
+var chnums = arr;
+chnums=chnums.sort(function(a, b){return a-b})
+var balancearr=[]
+
+var pull=function(chnums){
+    
+    var cost = -150
+    var win1 = 0
+    var win2 = 936
+    var win3 = 13491
+    var win4 = 1083053
+    var win5 = 779453958
+	var balance=0
+    var allnums = []
+            for (var i = 1; i <= 90; i++) {
+              allnums.push(i);
+            }
+
+    function getRandomSubarray(arr, size) {
+        var shuffled = arr.slice(0), i = arr.length, temp, index;
+        while (i--) {
+            index = Math.floor((i + 1) * Math.random());
+            temp = shuffled[index];
+            shuffled[index] = shuffled[i];
+            shuffled[i] = temp;
+        }
+        return shuffled.slice(0, size);
+    }
+
+    var pullnums = getRandomSubarray(allnums, 5);
+    pullnums=pullnums.sort(function(a, b){return a-b})
+
+    function intersect(a, b){
+      var ai=0, bi=0;
+      var result = [];
+
+      while( ai < a.length && bi < b.length )
+      {
+         if      (a[ai] < b[bi] ){ ai++; }
+         else if (a[ai] > b[bi] ){ bi++; }
+         else 
+         {
+           result.push(a[ai]);
+           ai++;
+           bi++;
+         }
+      }
+      return result;
+    }
+
+    var matchnums=intersect(chnums,pullnums)
+    var match=matchnums.length
+    
+   if(match === 0){balance = cost + Math.floor((Math.random() * 10) + 1)} //hogy ne jöjjön egymás után többbször ugyanaz
+    else if(match === 1){balance = cost+win1}
+    else if(match === 2){balance = cost+win2}
+    else if(match === 3){balance = cost+win3}
+    else if(match === 4){balance = cost+win4}
+    else if(match === 5){balance = cost+win5}
+	
+    balancearr.push(balance)
+}
+
+for(var i=1;i<=pullcount;i++){pull(chnums)}
+
+var sum = balancearr.reduce(add, 0);
+function add(a, b) {
+    return a + b;
+}
+document.getElementById("xb").disabled = true;
+
+if(Math.random()>0.5){var q ="Okay?" } else{ q = "Alright?"}
+
+console.log(sum);
+if(sum<0){
+document.getElementById("demo").innerHTML=("U lost " +(-sum)+ "!!! "+q+"<br> Try again!");   
+document.getElementById("demo").style.color="#cc0000"}
+else{
+document.getElementById("demo").innerHTML=("U won " +sum+ "!!! "+q+"<br> Try again!");   
+document.getElementById("demo").style.color="#39e600" ;}
+}
+</script>
+</body>
+</html>
